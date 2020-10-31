@@ -1,1 +1,1 @@
-# Small_Projects_in_Python
+# Small Projects in Python :snake:
