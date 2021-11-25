@@ -12,6 +12,9 @@ def corses(prereqs_courses1):
                 idx = listComb.index(rows[1])
                 if idx == 0:
                     listComb.insert(0, rows[0])
+                else:
+                  listComb.insert(idx - 1, rows[0])
+
    
             else:
                 listComb.extend(rows)   
@@ -22,6 +25,7 @@ def corses(prereqs_courses1):
       div = div - 1
     else:
       div = int((val-1)/2)
+    print(listComb)
     return listComb[div]                    
             
 
@@ -33,6 +37,7 @@ prereqs_courses1 = [
     ["Foundations of Computer Science", "Logic"],
     ["Logic", "Compilers"],
     ["Compilers", "Distributed Systems"],
-    ["hhsdhasgdhsaghd", "Data Structures"]
+    ["hhsdhasgdhsaghd", "Data Structures"],
+    ["Data Structures", "TESTE"]
 ]
 print(corses(prereqs_courses1))
